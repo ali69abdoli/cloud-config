@@ -1,0 +1,17 @@
+
+server:
+  port: 8085
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8082/eureka
+    register-with-eureka: true
+    fetch-registry: false
+spring:
+  application:
+    name: serviceDiscovery
+  config:
+    import: "optional:configserver:"
+  cloud:
+    config:
+      uri: http://localhost:8082
