@@ -6,4 +6,4 @@ eureka:
     fetchRegistry: false
 spring:
   application:
-    name: serviceDiscovery
+    name: serviceDiscoveryDev
